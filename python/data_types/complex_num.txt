@@ -1,0 +1,11 @@
+Q. 1 Add & multiply two complex nubbers.
+
+Sol.1 
+	>>> a, b, c, d=complex(a), complex(b), a+b, a*b
+	>>> print('a={}\nb={}\nc={}\nd={}'.format(a, b, c, d))
+	Note: In script a+b & a*b is not possible.
+
+	2. complex_num.py
+
+	a, b = complex(10), complex(12)
+	print('a={}\nb={}\nc={}\nd={}'.format(a, b, a + b, a * b))
