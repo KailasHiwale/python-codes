@@ -1,6 +1,8 @@
 st = input("Enter string: ")
-li = []
+di = {}
 for i in st:
-	li.append(i)
-	if i not in li:
-		print("hii")
+    di[i] = st.count(i)
+
+print("Frequency count of character in given string:")
+for key, value in di.items():
+    print("{}: {}".format(key, value))
