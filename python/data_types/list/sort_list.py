@@ -1,7 +1,9 @@
-li = [2, 4, 1, 2, 11, 10, 1, 2, 5]
+# D1
+# Sort list without using any inbuilt function in dscending order
+li = [4, 1, 2, 1, 7, 2, 9, 0]
 
 
-def sort_list_asc(li):
+def sort_list_dsc(li):
     li2 = []
     while len(li) > 0:
         max, i = li[0], 1
@@ -13,12 +15,40 @@ def sort_list_asc(li):
     print("Dscending order: \n", li2)
 
 
-sort_list_asc(li)
-
-li = [2, 4, 1, 2, 11, 10, 1, 2, 5]
+sort_list_dsc(li)
 
 
-def sort_list_dsc(li):
+# D2
+# Sort list without using any inbuilt function in dscending order
+li2 = [4, 1, 2, 1, 7, 2, 9, 0]
+
+
+def sort_list_dsc_2(li2):
+    count, m = 0, 0
+
+    for i in li2:
+        count += 1
+
+    while m < count:
+        n = m + 1
+        while n < count:
+            if li2[n] >= li2[m]:
+                li2[m], li2[n] = li2[n], li2[m]
+            n += 1
+        m += 1
+
+    print("Dscending order2: \n", li2)
+
+
+sort_list_dsc_2(li2)
+
+
+# A1
+# Sort list without using any inbuilt function in dscending order
+li = [4, 1, 2, 1, 7, 2, 9, 0]
+
+
+def sort_list_asc(li):
     li2 = []
     while len(li) > 0:
         min, i = li[0], 1
@@ -30,4 +60,28 @@ def sort_list_dsc(li):
     print("Ascending order: \n", li2)
 
 
-sort_list_dsc(li)
+sort_list_asc(li)
+
+# A2
+# Sort list without using any inbuilt function in dscending order
+li2 = [4, 1, 2, 1, 7, 2, 9, 0]
+
+
+def sort_list_asc_2(li2):
+    count, m = 0, 0
+
+    for i in li2:
+        count += 1
+
+    while m < count:
+        n = m + 1
+        while n < count:
+            if li2[n] <= li2[m]:
+                li2[m], li2[n] = li2[n], li2[m]
+            n += 1
+        m += 1
+
+    print("Ascending order2: \n", li2)
+
+
+sort_list_asc_2(li2)
