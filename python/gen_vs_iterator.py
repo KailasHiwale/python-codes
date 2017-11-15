@@ -7,7 +7,7 @@ class PowTwo:
         return self
 
     def __next__(self):
-        if self.n > self.max:
+        if self.n < self.max:
             raise StopIteration
 
         result = 2 ** self.n
