@@ -1,4 +1,4 @@
-# D1
+# Desc1
 # Sort list without using any inbuilt function in dscending order
 li = [4, 1, 2, 1, 7, 2, 9, 0]
 
@@ -18,7 +18,7 @@ def sort_list_dsc(li):
 sort_list_dsc(li)
 
 
-# D2
+# Desc2
 # Sort list without using any inbuilt function in dscending order
 li2 = [4, 1, 2, 1, 7, 2, 9, 0]
 
@@ -43,8 +43,8 @@ def sort_list_dsc_2(li2):
 sort_list_dsc_2(li2)
 
 
-# A1
-# Sort list without using any inbuilt function in dscending order
+# Asc1
+# Sort list without using any inbuilt function in ascending order
 li = [4, 1, 2, 1, 7, 2, 9, 0]
 
 
@@ -62,8 +62,8 @@ def sort_list_asc(li):
 
 sort_list_asc(li)
 
-# A2
-# Sort list without using any inbuilt function in dscending order
+# Asc2
+# Sort list without using any inbuilt function in ascending order
 li2 = [4, 1, 2, 1, 7, 2, 9, 0]
 
 
