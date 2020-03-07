@@ -1,4 +1,4 @@
-# Module to calculate the factorial of a number
+# Factorial of a given number by iterative and recusive ways.
 
 
 def factorial(n):
@@ -25,6 +25,7 @@ def factorial_recursive(n):
 if __name__ == '__main__':
     # Except number
     n = int(input("Enter positive number: "))
+    
     # Factorial iterative call
     print("Factorial iterative call:")
     if n < 0:

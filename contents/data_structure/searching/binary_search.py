@@ -2,6 +2,7 @@
 
 # Formula to find mid position
 # mid = low + (high - low) // 2
+# Time Complexity: O(log n)
 
 
 def bsearch(lst, low, high, item):

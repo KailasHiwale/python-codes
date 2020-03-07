@@ -2,6 +2,7 @@
 
 # Formula to find mid position
 # mid = low + (high - low) // 2
+# Time Complexity: O(log n)
 
 
 def bsearch(lst, low, high, item):
@@ -24,7 +25,10 @@ if __name__ == '__main__':
     item, low, high = 5, 0, len(lst) - 1
 
     result = bsearch(lst, low, high, item)
-    if result is not -1:
-        print("Element at index {}".format(result))
+    if len(lst) > 0:
+        if result is not -1:
+            print("Element at index {}".format(result))
+        else:
+            print("Not found.")
     else:
-        print("Not found.")
+        print("Can not search in empty list")

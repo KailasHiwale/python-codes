@@ -1,8 +1,24 @@
 #!/bin/python3
 
+"""
+Linear search
+-------------
+Time Complexity - O(n)
+"""
 
-def lsearch(lst, item, len_lst):
-    """Linear search"""
+
+def lsearch(lst, item):
+    """
+    Takes in list and search item. Searches if item is present in the list
+    returns index if present else returns -1
+    
+    :param list lst: list to be searched for item.
+    :param int item: item for search.
+    :return: item index or -1
+    :rtype: int 
+
+    """
+    len_lst = len(lst)
     for i in range(len_lst):
         if lst[i] is item:
             return i
@@ -11,8 +27,7 @@ def lsearch(lst, item, len_lst):
 
 if __name__ == '__main__':
     lst, item = [20, 10, 40, 23, 10, 50, 14], 23
-    len_lst = len(lst)
-    result = lsearch(lst, item, len_lst)
+    result = lsearch(lst, item)
     if result is not -1:
         print("Element at index {}".format(result))
     else:
