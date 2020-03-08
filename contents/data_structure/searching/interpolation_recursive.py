@@ -5,6 +5,9 @@
 # item  -->     element to be search.
 # low   -->     starting index in list.
 # high  -->     End index in list
+# Time complexity: O(log log n)
+# Time complexity worst case: O(n)
+# Auxilary space: O(1)
 
 
 def interpolation_search(lst, low, high, item):
@@ -14,7 +17,7 @@ def interpolation_search(lst, low, high, item):
     if low <= high and item >= lst[low] and item <= lst[high]:
         # formula to find position
         pos = low + int(
-            (item - lst[low]) * (high - low) / (lst[high] - lst[low]))
+            (item - lst[low]) * (high - low) // (lst[high] - lst[low]))
 
         if lst[pos] is item:
             return pos
