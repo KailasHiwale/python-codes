@@ -1,5 +1,15 @@
 #!/bin/python3
 
+"""
+# Time complexity:
+    1. Best case: O(n)
+    2. Average case: O(n2)
+    3. Worst case: O(n2)
+# Space complexity: O(1)
+# Stable, Inplace and 
+# better than selection sort and buble sort in practical cases
+"""
+
 
 def sort(lst, lst_length):
     for i in range(1, lst_length):

@@ -1,4 +1,14 @@
 #!/bin/python3
+"""
+# Time Complexity:
+    1. Best case: O(n)
+    2. Average case: O(n2)
+    3. Worst case: O(n2)
+# Space complexity: O(1)
+# Stable & In place sorting algorithm.
+# Slow sorting algorithm but better than selection sort.
+
+"""
 
 
 # bubble_sort function to find number of swap, first element & last element.

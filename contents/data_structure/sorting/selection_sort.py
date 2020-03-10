@@ -1,5 +1,11 @@
 #!/bin/python3/
 
+"""
+# Time Complexity: O(n2)
+# Space Complexity: O(1)
+# Stable, Inplace and Slow sorting algorithm.
+"""
+
 
 # Function to implement selection sort algorithm.
 def selection_sort(lst, n):
