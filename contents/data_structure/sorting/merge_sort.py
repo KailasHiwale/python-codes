@@ -1,5 +1,17 @@
 #!/bin/python3
 
+"""
+1. Divide and conquer
+2. Recursive
+3. Stable
+4. Not an In-place algorithm
+5. Worst case time complexity: O(n lon n)
+6. Space complexity:
+    - If extra space required at each level of division cleared - O(n)
+    - If extra space required at each level of division not cleared - O(n log n)
+7. Merge Sort is useful for sorting linked lists in O(nLogn) time
+"""
+
 
 def merge(left, right, lst):
     len_left, len_right, i, j, k = len(left), len(right), 0, 0, 0

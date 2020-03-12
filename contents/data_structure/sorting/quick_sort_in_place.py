@@ -1,5 +1,19 @@
 #!/bin/python3
 
+"""
+1. Divide and conquer
+2. Recursive
+3. Not stable
+4. Time complexity:
+    1. Best and Average case: O(n log n)
+    2. Worst case: O(n2)
+    3. Randomised version of quick sort - worst case: O(n2)
+5. Space complexity:
+    1. Best case: O(log n)
+    2. Worst case: O(n)
+6 Suitable for sorting of larger size lists/arr
+"""
+
 
 def partition(lst, start_indx, end_indx):
     pivot_value = lst[end_indx]
