@@ -1,0 +1,10 @@
+Register:
+-first_name
+-last_name
+-email
+-password, confirmed_password
+-phone_number*
+-profession*
+-area_of_interest*
+-date_of_birth*
+
