@@ -1,5 +1,7 @@
 """
-Proble Statement: Write an algo. for maximum profit a user can 
+:Created on: May 27th, 2020
+:Company: NTTDATA
+:Proble Statement: Write an algo. for maximum profit a user can 
 get by buying and saling the stock on perticular dates.
 - Input: Share price list.
 - Output: min price date, max price date and max profit
@@ -25,7 +27,7 @@ def max_profit(price_lst):
 	return min_price_date, max_price_date, max_profit
 
 
-if __main__ = '__main__':
+if __name__ == '__main__':
 	price_lst = [120, 125, 140, 135, 133, 147, 145, 143, 101, 102]
 	buy_date, sale_date, profit = max_profit(price_lst)
 	print(buy_date, sale_date, profit)
