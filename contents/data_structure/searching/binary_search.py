@@ -1,21 +1,34 @@
 #!/bin/python3
-
-# Formula to find mid position
-# mid = low + (high - low) // 2
-# Time Complexity: O(log n)
+'''
+:created on: Feb 16th 2019
+:type: Interval/Binary search.
+:time complexity: O(log n)
+:constraint: Applicable for sorted arrays.
+:summery: This algorithm search the provided element in the list by repeatedly dividing
+    the list in two halfs.
+:steps:
+    1. check if low is less than or equal to high, if true got to 1.1 else 2.
+        1.1 find mid position - mid = low + (high - low) // 2
+        1.2 if serach_element is at mid return mid.
+        1.3 if serach_element is less than mid position element select the first half and 
+            reapeat from step 1 again for first half.
+        1.4 serach_element is greater than mid position element select the second half and 
+            reapeat from step 1 again for first half.
+    2. return -1
+'''
 
 
 def bsearch(lst, low, high, item):
     """Iterative binary search function"""
-    while low <= high:
-        mid = low + (high - low) // 2
-        if lst[mid] is item:
+    while low <= high:                  # 1
+        mid = low + (high - low) // 2   # 1.1
+        if item is lst[mid]:            # 1.2
             return mid
-        elif lst[mid] > item:
+        elif item < lst[mid]:           # 1.3
             high = mid - 1
-        else:
+        else:                           # 1.4
             low = mid + 1
-    return -1
+    return -1                           # 2
 
 
 # Start

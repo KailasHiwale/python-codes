@@ -1,9 +1,14 @@
 #!/bin/python3/
 
 """
-# Time Complexity: O(n2)
-# Space Complexity: O(1)
-# Stable, Inplace and Slow sorting algorithm.
+:time complexity: O(n2)
+:space complexity: O(1)
+:stability: Stable, Inplace and Slow sorting algorithm.
+:summery: 
+    1. select the min.
+    2. find the value less than min index value in remaining part
+    3. if found replace min index value with the found min value
+    4. increase the min index by one and repeat all the steps n-1 times
 """
 
 

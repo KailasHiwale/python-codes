@@ -1,6 +1,6 @@
 if __name__ == '__main__':
 	je_obj = (line for line in open('./fileIO/iofile/blg.txt'))
-	import ipdb;ipdb.set_trace()
+	# import ipdb;ipdb.set_trace()
 
 # Output
 ipdb> je_obj.__next__()                                                                                                                              

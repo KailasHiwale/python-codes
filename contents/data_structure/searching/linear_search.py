@@ -4,6 +4,7 @@
 Linear search
 -------------
 Time Complexity - O(n)
+Use Case: Use if list is unsorted. 
 """
 
 

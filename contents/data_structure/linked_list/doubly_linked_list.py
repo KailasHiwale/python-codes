@@ -86,7 +86,7 @@ class LinkedList:
         element = self.search(data)
         if not element:
             return
-        self.remove(element)
+        self.remove_node(element)
 
     def reverse(self):
         """
