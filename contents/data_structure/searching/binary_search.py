@@ -8,7 +8,7 @@
     the list in two halfs.
 :steps:
     1. check if low is less than or equal to high, if true got to 1.1 else 2.
-        1.1 find mid position - mid = low + (high - low) // 2
+        1.1 find mid positio: mid = low + (high - low) // 2
         1.2 if serach_element is at mid return mid.
         1.3 if serach_element is less than mid position element select the first half and 
             reapeat from step 1 again for first half.
