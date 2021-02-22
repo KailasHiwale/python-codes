@@ -11,7 +11,7 @@ def count_line(file):
 
 def dirs_files_count(dir_path):
 	file_count, dir_count = 0, 0
-	for root, dirs, files in os.walk("iofile/"):
+	for root, dirs, files in os.walk(dir_path):
 		file_count += len(files)
 		dir_count += len(dirs)
 	print("Number of files: {} \nNumber of directories: {}".format(file_count, dir_count))
