@@ -1,0 +1,43 @@
+#-------------------------------------------
+lambda
+#-------------------------------------------
+>>> multiply = lambda x, y : x * y
+>>> print(multiply(4, 3))
+12
+
+#-------------------------------------------
+map
+#-------------------------------------------
+>>> def square(num):
+...     return num**2
+... 
+>>> list(map(square, range(1, 10)))
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> 
+>>> list(map(lambda x: x**2, range(1,10)))
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> 
+>>> list(map(lambda x, y: x+y, [1, 2, 3], [3, 4, 5, 6]))
+[4, 6, 8]
+>>> 
+
+#-------------------------------------------
+filter
+#-------------------------------------------
+>>> list(filter(lambda x: x%2 == 0, range(1, 10)))
+[2, 4, 6, 8]
+>>> 
+>>> list(filter(lambda x, y: x+y%2 == 0, range(1, 10), range(10, 21)))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: filter expected 2 arguments, got 3
+
+#-------------------------------------------
+reduce
+#-------------------------------------------
+>>> import functools
+>>> functools.reduce(lambda x, y: x+y, range(1, 11))
+55
+>>> functools.reduce(lambda x, y: x+y if x+y%2==0 else 0, range(1, 11))
+10
+>>>

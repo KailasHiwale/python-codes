@@ -15,7 +15,7 @@ def pickle_dump(fpath):
 
 # function to load data
 def pickle_load(fpath):
-	with open('data/westeros.pickle', 'rb') as file:
+	with open(fpath, 'rb') as file:
 		westeros = pickle.load(file)
 	return westeros
 
