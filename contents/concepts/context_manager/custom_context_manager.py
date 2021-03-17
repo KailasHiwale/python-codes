@@ -6,7 +6,7 @@ Internal working:
 3. The with statement calls the stored __exit__ method and __exit__ method closes the file.
 
 type, value and traceback arguments of the __exit__ method allow exit method to decide how to close the file if exception occures.
-It return True if exception handled gracefully else it raises appropreate exception.
+It return True, if exception handled gracefully else it raises appropreate exception.
 
 with File('demo.txt', 'w') as file:
     file.xyz('Hallo!')
