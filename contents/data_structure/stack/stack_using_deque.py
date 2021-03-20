@@ -35,7 +35,7 @@ class Stack(object):
         else:
             raise IndexError("pop from an empty stack")
 
-    def peek(self):
+    def peak(self):
         """Return last element of stack.
         Takes O(1) time
         """

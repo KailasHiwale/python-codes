@@ -38,7 +38,7 @@ class Stack:
         """Check if stack is empty."""
         return True if self.head is None else False
 
-    def peek(self):
+    def peak(self):
         """Return top element of the stack."""
         if self.is_empty():
             return
@@ -53,4 +53,4 @@ if __name__ == '__main__':
         stack_node.push(i)
     stack_node.pop()
     stack_node.is_empty()
-    stack_node.peek()
+    stack_node.peak()

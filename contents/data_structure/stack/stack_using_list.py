@@ -14,7 +14,7 @@
 class Stack(object):
     """Class to create stack"""
     def __init__(self):
-        self.stack = []
+        self.stack = list()
 
     def __repr__(self):
         pass
@@ -33,7 +33,7 @@ class Stack(object):
         else:
             raise IndexError("pop from an empty stack")
 
-    def peek(self):
+    def peak(self):
         """Return last element of stack.
         Takes O(1) time
         """
